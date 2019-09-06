@@ -117,7 +117,7 @@ head(result, n = 15)
 #  # Plot Results
 #  PlotDetections(myData, title = "KNN-CAD ANOMALY DETECTOR")
 
-## ----exapmle1b, tidy = TRUE, eval = FALSE--------------------------------
+## ----exapmle1b, eval = FALSE---------------------------------------------
 #  # Get detector score
 #  score <- GetDetectorScore(myData)
 #  
@@ -132,7 +132,7 @@ head(result, n = 15)
 #    title = "speed_7578 results using KNN-CAD detector"
 #  )
 
-## ----exapmle1d, tidy = TRUE, eval = FALSE--------------------------------
+## ----exapmle1d, eval = FALSE---------------------------------------------
 #  # Normalize results
 #  null.perfect <- GetNullAndPerfectScores(myData)
 #  

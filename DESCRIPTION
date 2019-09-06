@@ -1,7 +1,7 @@
 Package: otsad
 Type: Package
 Title: Online Time Series Anomaly Detectors
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("Alaiñe", "Iturria", email = "aiturria@ikerlan.es", role = c("aut","cre")),
     person("Jacinto", "Carrasco", email = "jacintocc@decsai.ugr.es", role = c("aut")),
@@ -29,7 +29,7 @@ Suggests: testthat, stream, knitr, rmarkdown
 Imports: stats, ggplot2, plotly, sigmoid, reticulate
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-04-01 04:52:53 UTC; aiturria
+Packaged: 2019-09-05 17:21:13 UTC; aiturria
 Author: Alaiñe Iturria [aut, cre],
   Jacinto Carrasco [aut],
   Francisco Herrera [aut],
@@ -37,4 +37,4 @@ Author: Alaiñe Iturria [aut, cre],
   Karmele Intxausti [aut]
 Maintainer: Alaiñe Iturria <aiturria@ikerlan.es>
 Repository: CRAN
-Date/Publication: 2019-04-01 16:40:03 UTC
+Date/Publication: 2019-09-06 09:50:02 UTC

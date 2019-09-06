@@ -62,8 +62,8 @@ OipSdEwma <- function(data, n.train, threshold, l = 3, last.res = NULL) {
   if (!is.numeric(data) | (sum(is.na(data)) > 0)) {
     stop("data argument must be a numeric vector and without NA values.")
   }
-  if (!is.numeric(n.train) | n.train >= length(data)) {
-    stop("n.train argument must be a numeric value and less than data length.")
+  if (!is.numeric(n.train) | n.train <= 0) {
+    stop("n.train argument must be a positive numeric value.")
   }
   if (!is.numeric(threshold) | threshold <= 0 |  threshold > 1) {
     stop("threshold argument must be a numeric value in (0,1] range.")
@@ -148,6 +148,7 @@ OipSdEwma <- function(data, n.train, threshold, l = 3, last.res = NULL) {
   last.res <- get("last.res", envir = new.enviroment)
   if (unique(last.res$i) == n.train) {
     last.res <- last.res[last.res$error.sum == min(last.res$error.sum),]
+    last.res <- last.res[1,]
     assign("last.res", last.res, envir = new.enviroment)
   }
 
